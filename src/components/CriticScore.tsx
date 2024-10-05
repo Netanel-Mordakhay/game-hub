@@ -7,7 +7,7 @@ interface Props {
 
 const CriticScore = ({ score }: Props) => {
   // Set color scheme based on game metacritic score
-  let color = score > 75 ? "green" : score > 60 ? "yellow" : "";
+  let color = score > 85 ? "green" : score > 70 ? "yellow" : "";
 
   return (
     <Badge colorScheme={color} fontSize="14px" paddingX={2} borderRadius={2}>
