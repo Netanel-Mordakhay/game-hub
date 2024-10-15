@@ -24,7 +24,13 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 
   // Show genre list skeleton
   if (isLoading) {
-    return skeletons.map((skeleton) => <GenreListSkeleton key={skeleton} />);
+    return (
+      <>
+        {skeletons.map((skeleton) => (
+          <GenreListSkeleton key={skeleton} />
+        ))}
+      </>
+    );
   }
 
   // Show genres
